@@ -15,13 +15,18 @@ console.log(numberElement, fizzElement, buzzElement, fizzBuzzElement);
 for (let i=1; i<=100; i++){
     if (i % 3 === 0 && i % 5 === 0){
         console.log("FizzBuzz");
+        fizzBuzzElement.innerHTML += "FizzBuzz";
     } else if (i % 3 === 0) {
         console.log("Fizz");
+        fizzElement.innerHTML += "Fizz";
     } else if (i % 5 === 0){
-        console.log("Buzz")
+        console.log("Buzz");
+        buzzElement.innerHTML += "Buzz";
     } else {
         console.log(i)
+        numberElement.innerHTML += i;
     }
+    
 }
 
 
